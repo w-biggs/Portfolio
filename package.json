@@ -6,6 +6,7 @@
   "author": "w biggs",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1"
   }
 }
