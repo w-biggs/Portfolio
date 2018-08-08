@@ -2,5 +2,13 @@ body{
   &#splash{
     background-color: black;
     color: white;
+
+    header{
+      text-align: center;
+
+      #logo{
+        width: 36rem;
+      }
+    }
   }
 }
