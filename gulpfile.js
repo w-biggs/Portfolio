@@ -3,6 +3,8 @@ var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
+var minify = require('gulp-minify');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('serve', ['sass'], function() {
 
@@ -39,5 +41,16 @@ gulp.task('compile-html', function() {
     .pipe(gulp.dest("dist"))
 });
 
+gulp.task('compile-js', function() {
+  return gulp.src("dev/js/*.js")
+    .pipe(minify())
+    .pipe(gulp.dest("dist/js"))
+});
 
-gulp.task('compile', ['compile-html', 'compile-css']);
+gulp.task('compile-images', function() {
+  return gulp.src("dev/images/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("dist/images"))
+});
+
+gulp.task('compile', ['compile-html', 'compile-css', 'compile-js', 'compile-images']);
