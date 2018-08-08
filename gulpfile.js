@@ -23,13 +23,21 @@ gulp.task('sass', function() {
 
 gulp.task('default', ['serve']);
 
-gulp.task('compile', function() {
+gulp.task('compile-css', function() {
   return gulp.src("dev/scss/*.scss")
-  .pipe(sass())
-  .pipe(autoprefixer({
-    browsers: ['> 5% in US'],
-    cascade: false
-  }))
-  .pipe(cleanCSS({compatibility: 'ie9'}))
-  .pipe(gulp.dest("dist/css"))
+    .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: ['> 5% in US'],
+      cascade: false
+    }))
+    .pipe(cleanCSS({compatibility: 'ie9'}))
+    .pipe(gulp.dest("dist/css"))
 });
+
+gulp.task('compile-html', function() {
+  return gulp.src("dev/*.html")
+    .pipe(gulp.dest("dist"))
+});
+
+
+gulp.task('compile', ['compile-html', 'compile-css']);
