@@ -35,7 +35,7 @@ gulp.task('compile-css', function() {
 });
 
 gulp.task('compile-html', function() {
-  return gulp.src("dev/*.html")
+  return gulp.src("dev/**/*.html")
     .pipe(gulp.dest("dist"))
 });
 
