@@ -29,6 +29,29 @@ body{
   text-align: center;
 }
 
+.leftnav{
+  position: fixed;
+  left: 2em;
+  top: 2em;
+  text-align: left;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		li{
+			font-size: 2.4rem;
+			opacity: 0.6;
+			transition: opacity 0.2s;
+		}
+
+		li:hover{
+			opacity: 1;
+		}
+	}
+}
+
 /* skylines! */
 
 .skyline{
