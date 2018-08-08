@@ -69,6 +69,11 @@ section{
       a{
         opacity: 0.6;
         transition: 0.2s opacity;
+
+        &.active{
+          opacity: 1;
+          pointer-events: none;
+        }
       
         #small-logo{
           width: 2.1em;
