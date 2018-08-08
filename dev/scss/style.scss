@@ -80,6 +80,29 @@ body{
   }
 }
 
+/* skylines! */
+
+.skyline{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top:0;
+  left:0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#skylinefront{
+  z-index: -1;
+  background-image: url('images/skyline-front.svg');
+}
+
+#skylineback{
+  z-index: -3;
+  background-image: url('images/skyline-back.svg');
+}
+
 /* stars! */
 
 #starcontainer{
