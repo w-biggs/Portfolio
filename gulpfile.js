@@ -21,3 +21,5 @@ gulp.task('sass', function() {
       .pipe(gulp.dest("dev/css"))
       .pipe(browserSync.stream());
 });
+
+gulp.task('default', ['serve']);
