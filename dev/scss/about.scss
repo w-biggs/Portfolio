@@ -3,13 +3,14 @@ body{
 }
 
 #profile{
-  width: 20vw;
-  height: 20vw;
-  border-radius: 10vw;
-  border: 3px solid #333;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 0.4vw;
+  //border: 3px solid #333;
   background-image: url('../images/italy.jpg');
   background-size: contain;
   display: inline-block;
   box-shadow: 0 0 1rem rgba(0,0,0,0.21);
   margin-bottom: 2rem;
+  margin-top: 5em;
 }
