@@ -27,6 +27,7 @@ body{
   margin: 0;
   padding: 0;
   text-align: center;
+  text-shadow: 0 0 1rem rgba(0,0,0,0.21);
 }
 
 h1{
@@ -38,6 +39,7 @@ h1{
   left: 2em;
   top: 2em;
   text-align: left;
+  text-shadow: none;
 
 	ul {
 		list-style-type: none;
