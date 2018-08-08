@@ -77,3 +77,95 @@ body{
     }
   }
 }
+
+/* stars! */
+
+#starcontainer{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top:0;
+  left:0;
+	z-index: -4;
+	
+	.stars{
+		will-change: transform;
+		transform: translateZ(0);
+	}
+}
+
+@function box-shadow($stars) {
+	$bxshadow: ();
+	@for $i from 1 to $stars {
+		$bxshadow: append($bxshadow, (random(100) + 0vw) (random(95) + 0vh) #fff, comma);
+	}
+	@return $bxshadow;
+}
+
+$bxshadow-large: box-shadow(25);
+$bxshadow-large2: box-shadow(25);
+$bxshadow-medium: box-shadow(50);
+$bxshadow-medium2: box-shadow(50);
+$bxshadow-small: box-shadow(100);
+$bxshadow-small2: box-shadow(100);
+
+.stars.large {
+	height: 3px;
+	width: 3px;
+	background: transparent;
+	box-shadow: $bxshadow-large;
+	animation: blink 10s infinite;
+	animation-delay: (0 - random(10000)) * 1ms;
+}
+.stars.large2 {
+	height: 3px;
+	width: 3px;
+	background: transparent;
+	box-shadow: $bxshadow-large2;
+	animation: blink 10s infinite;
+	animation-delay: (0 - random(10000)) * 1ms;
+}
+.stars.medium {
+	height: 2px;
+	width: 2px;
+	background: transparent;
+	box-shadow: $bxshadow-medium;
+	animation: blink 7.5s infinite;
+	animation-delay: (0 - random(7500)) * 1ms;
+}
+.stars.medium2 {
+	height: 2px;
+	width: 2px;
+	background: transparent;
+	box-shadow: $bxshadow-medium2;
+	animation: blink 7.5s infinite;
+	animation-delay: (0 - random(7500)) * 1ms;
+}
+.stars.small {
+	height: 1px;
+	width: 1px;
+	background: transparent;
+	box-shadow: $bxshadow-small;
+	animation: blink 5s infinite;
+	animation-delay: (0 - random(5000)) * 1ms;
+}
+.stars.small2 {
+	height: 1px;
+	width: 1px;
+	background: transparent;
+	box-shadow: $bxshadow-small2;
+	animation: blink 5s infinite;
+	animation-delay: (0 - random(5000)) * 1ms;
+}
+
+@keyframes blink {
+	0% {
+		opacity:1;
+	}	
+	70% {
+		opacity:0.3;
+	}
+	100% {
+		opacity:1;
+	}
+}
