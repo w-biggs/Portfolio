@@ -11,6 +11,13 @@ a{
   text-decoration: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* element styling */
 body{
   min-height: 100vh;
