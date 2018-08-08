@@ -13,10 +13,17 @@ a{
 
 /* element styling */
 body{
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
   &#splash{
     background-color: black;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     header{
       #logo{
