@@ -30,6 +30,10 @@ body{
   text-shadow: 0 0 1rem rgba(0,0,0,0.21);
 }
 
+main{
+  overflow:auto;
+}
+
 header h1{
   font-size: 4.5rem;
 }
