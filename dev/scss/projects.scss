@@ -3,7 +3,7 @@ body{
 }
 
 main{
-  max-width: 60%; 
+  max-width: 60%;
 }
 
 section{
@@ -13,5 +13,12 @@ section{
   p{
     font-size: 1.75rem;
     margin: 0.5em 0 0 0;
+  }
+}
+
+.project-images{
+  img.desktop{
+    max-width: 90%;
+    max-height: 40vh;
   }
 }
