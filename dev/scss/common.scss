@@ -32,6 +32,10 @@ body{
   flex-direction: column;
 }
 
+.box-shadowed{
+  box-shadow: 0 0 1rem rgba(0,0,0,0.21);
+}
+
 main{
   overflow:auto;
   max-width: 70%;
