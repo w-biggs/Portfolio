@@ -23,11 +23,23 @@ section{
   display: inline-block;
   max-width: 90%;
 
+  div.project-image-container{
+    width: 100%;
+    margin-bottom: .5rem;
+    max-height: 50vh;
+    overflow: hidden;
+  }
+
   img.desktop{
     max-width: 100%;
     max-height: 50vh;
-    margin-bottom: .5rem;
   }
+
+  img.mobile{
+    max-width: 100%;
+    max-height: 65vh;
+  }
+
   div.devices{
     text-align: right;
     cursor: default;
