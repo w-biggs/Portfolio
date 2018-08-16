@@ -2,3 +2,40 @@ body{
   background: linear-gradient(#000, #121825 33%, #304164 66%, #a77247 90%, #bb7a42);
   color: white;
 }
+
+#halves-container{
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: space-around;
+  
+  section{
+    text-align: left;
+    width: 40%;
+
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      
+      li{
+        font-size: 2.25rem;
+        margin: 1em 0;
+
+        i{
+          font-size: 0.6em;
+          margin-right: 0.5em;
+        }
+
+        a{
+          opacity: 1;
+          transition: 0.2s opacity;
+
+          &:hover{
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
