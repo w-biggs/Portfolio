@@ -5,9 +5,10 @@ body{
 
 #halves-container{
   display: flex;
-  margin-top: 3rem;
   width: 100%;
   justify-content: space-around;
+  flex-flow: row wrap;
+  margin-top: 5em;
   
   section{
     text-align: left;
