@@ -117,3 +117,27 @@ section{
   background-image: url('../images/skyline.svg');
   opacity: 0.25;
 }
+
+/* responsive! */
+
+@media only screen and (max-width: 1500px) {
+  .leftnav{
+    ul li{
+      font-size: 2rem;
+    }
+  }
+  header h1{
+    font-size: 3.75rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .leftnav{
+    ul li{
+      font-size: 1.75rem;
+    }
+  }
+  header h1{
+    font-size: 3.5rem;
+  }
+}

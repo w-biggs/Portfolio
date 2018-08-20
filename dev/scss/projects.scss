@@ -91,3 +91,37 @@ section{
     }
   }
 }
+
+@media only screen and (max-width: 1500px) {
+  main{
+    max-width: 60%;
+  }
+  section{
+    h1{
+      font-size: 3.125rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    a.visitlink{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  section{
+    h1{
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.25rem;
+    }
+    a.visitlink{
+      font-size: 1.25rem;
+    }
+  }
+  .project-images div.devices span.device{
+    font-size: 1.5rem;
+  }
+}
