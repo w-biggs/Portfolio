@@ -8,7 +8,6 @@ body{
   width: 100%;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin-top: 5em;
 
   header.full{
     width: 100%;
@@ -18,8 +17,9 @@ body{
   }
 
   #sectionheader{
-    font-size: 3.2em;
+    font-size: 3.2rem;
     font-weight: 400;
+    margin-top: .675em;
   }
   
   section{
@@ -62,5 +62,87 @@ body{
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  #halves-container{
+    #sectionheader{
+      font-size: 2.75rem;
+      margin-top: .5em;
+    }
+    section ul li{
+      font-size: 1.875rem;  
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #halves-container{
+    #sectionheader{
+      font-size: 2.4rem;
+      margin-top: .375em;
+    }
+    section ul li{
+      font-size: 1.675rem;  
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  main{
+    max-width: 60%;
+  }
+  #halves-container{
+    #sectionheader{
+      font-size: 2.1rem;
+      margin-top: 0em;
+    }
+    section ul li{
+      font-size: 1.3333333rem;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 800px) {
+  main{
+    max-width: 60%;
+  }
+  #halves-container{
+    header.full{
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+    }
+    #sectionheader{
+      font-size: 1.75rem;
+    }
+    section ul li{
+      font-size: 1.1rem;
+      margin: .75em 0;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 600px) {
+  main{
+    max-width: 60%;
+  }
+  #halves-container{
+    #sectionheader{
+      font-size: 1.5rem;
+    }
+    section ul li{
+      font-size: 1rem;
+      margin: .5em 0;
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  main{
+    max-width: 90%;
+  }
+  .leftnav{
+    background-color: #000;
   }
 }
