@@ -132,6 +132,39 @@ section{
   }
 }
 
+@media only screen and (orientation: landscape) and (max-width: 800px) {
+  section{
+    padding: 2rem 0;
+    h1{
+      font-size: 1.75rem;
+    }
+    p{
+      font-size: 1.1rem;
+    }
+    a.visitlink{
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 600px) {
+  section{
+    padding: 1.75rem 0;
+    h1{
+      font-size: 1.6rem;
+    }
+    p{
+      font-size: 1.05rem;
+    }
+    a.visitlink{
+      font-size: 1.25rem;
+    }
+    &:last-child{
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
 @media only screen and (orientation: portrait) {
   main{
     max-width: 90%;

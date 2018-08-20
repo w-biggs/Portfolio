@@ -126,7 +126,7 @@ section{
       font-size: 2rem;
     }
   }
-  header h1{
+  main > header h1{
     font-size: 3.75rem;
   }
 }
@@ -137,8 +137,34 @@ section{
       font-size: 1.75rem;
     }
   }
-  header h1{
+  main > header h1{
     font-size: 3.5rem;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 800px) {
+  .leftnav{
+    ul li{
+      font-size: 1.5rem;
+    }
+  }
+  main > header h1{
+    font-size: 3rem;
+    margin: .3em 0 .5em 0;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 600px) {
+  .leftnav{
+    left: 1.25em;
+    top: 1.25em;
+    ul li{
+      font-size: 1.25rem;
+    }
+  }
+  main > header h1{
+    font-size: 2.75rem;
+    margin: .25em 0 .4em 0;
   }
 }
 
@@ -182,7 +208,7 @@ section{
       font-size: 1.5rem;
     }
   }
-  header h1{
+  main > header h1{
     font-size: 3rem;
     margin: .3em 0 .5em 0;
   }
@@ -194,7 +220,7 @@ section{
       font-size: 1.4rem;
     }
   }
-  header h1{
+  main > header h1{
     font-size: 2.75rem;
     margin: .25em 0 .4em 0;
   }
@@ -206,7 +232,7 @@ section{
       font-size: 1.25rem;
     }
   }
-  header h1{
+  main > header h1{
     font-size: 2.25rem;
     margin: .25em 0 .4em 0;
   }
