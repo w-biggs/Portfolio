@@ -113,16 +113,18 @@ section{
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
   section{
     h1{
       font-size: 2.5rem;
+      margin: 0.25em 0 0 0;
     }
     p{
       font-size: 1.25rem;
+      margin: 0.75em 0 0 0;
     }
     a.visitlink{
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
   .project-images div.devices span.device{
@@ -133,5 +135,62 @@ section{
 @media only screen and (orientation: portrait) {
   main{
     max-width: 90%;
+  }
+}
+
+@media screen and (orientation:portrait) and (max-width: 500px) {
+  section{
+    padding: 2rem 0;
+    h1{
+      font-size: 1.75rem;
+    }
+    p{
+      font-size: 1.1rem;
+    }
+    a.visitlink{
+      font-size: 1.25rem;
+    }
+  }
+  .project-images div.devices span.device{
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (orientation:portrait) and (max-width: 400px) {
+  section{
+    padding: 1.75rem 0;
+    h1{
+      font-size: 1.6rem;
+    }
+    p{
+      font-size: 1.05rem;
+    }
+    a.visitlink{
+      font-size: 1.25rem;
+    }
+    &:last-child{
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+@media screen and (orientation:portrait) and (max-width: 350px) {
+  section{
+    padding: 1.5rem 0;
+    h1{
+      font-size: 1.4rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+    a.visitlink{
+      font-size: 1.1rem;
+    }
+    &:last-child{
+      padding-bottom: 0.5rem;
+    }
+  }
+  .project-images div.devices span.device{
+    font-size: 1.125rem;
   }
 }
