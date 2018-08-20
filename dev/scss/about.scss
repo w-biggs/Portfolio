@@ -6,10 +6,99 @@ body{
 #profile{
   width: 19vw;
   height: 19vw;
-  border-radius: 9.5vw;
+  border-radius: 100%;
   border: 3px solid #ced8ff;
   background-image: url('../images/italy.jpg');
   background-size: contain;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 1.66666667vw;
+}
+
+@media only screen {
+  #profile{
+    width: 23vw;
+    height: 23vw;
+    margin-bottom: 1.9vw;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  #profile{
+    width: 35vw;
+    height: 35vw;
+    margin-bottom: 3vw;
+  }
+  main{
+    max-width: 90%;
+  }
+  .leftnav{
+    background-color: #7f93e6;
+  }
+  section{ 
+    h1{
+      font-size: 3.25rem;
+    }
+    p{
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 800px) {
+  section{ 
+    h1{
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 500px) {
+  #profile{
+    width: 40vw;
+    height: 40vw;
+    margin-bottom: 3.5vw;
+  }
+  section{ 
+    h1{
+      font-size: 1.625rem;
+    }
+    p{
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 400px) {
+  #profile{
+    width: 45vw;
+    height: 45vw;
+    margin-bottom: 5vw;
+  }
+  section{ 
+    h1{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 350px) {
+  #profile{
+    width: 50vw;
+    height: 50vw;
+    margin-bottom: 5.5vw;
+  }
+  section{ 
+    h1{
+      font-size: 1.25rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
 }
