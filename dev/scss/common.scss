@@ -141,3 +141,37 @@ section{
     font-size: 3.5rem;
   }
 }
+
+@media only screen and (orientation: portrait) {
+  body{
+    padding-bottom: 6rem;
+  }
+  .leftnav{
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: auto;
+    text-align: center;
+    background-color: #9CABE6;
+    z-index: 1;
+
+    ul{
+      display: flex;
+      justify-content: space-around;
+
+      li{
+        display: inline-block;
+        font-size: 2rem;
+        height: 2.5em;
+        line-height: 2.5em;
+        a {
+          opacity: 1;
+          #small-logo{
+            vertical-align: middle;
+            width: 1.75em;
+          }
+        }
+      }
+    }
+  }
+}
