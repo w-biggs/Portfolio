@@ -44,6 +44,12 @@ body{
   }
 }
 
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  body{
+    padding: 2rem 0 !important;
+  }
+}
+
 @media only screen and (orientation: portrait) and (max-width: 800px) {
   section{ 
     h1{
