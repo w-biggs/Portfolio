@@ -10,6 +10,10 @@ section{
   border-top: 2px solid rgba(0, 0, 0, 0.15);
   padding: 3rem 0;
 
+  &:last-child{
+    padding-bottom: 1rem;
+  }
+
   h1{
     font-size: 3.5rem;
   }
