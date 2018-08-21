@@ -12,6 +12,12 @@ a{
   color: inherit;
   text-decoration: none;
 }
+*:focus{
+  outline: 3px solid;
+}
+*:hover, *:active {
+  outline: none;
+}
 
 /* border box reset */
 html {
