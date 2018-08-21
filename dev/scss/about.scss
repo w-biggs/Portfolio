@@ -14,7 +14,7 @@ body{
   margin-bottom: 1.66666667vw;
 }
 
-@media only screen {
+@media only screen and (orientation: landscape) and (max-width: 1500px) {
   #profile{
     width: 23vw;
     height: 23vw;
