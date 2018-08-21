@@ -49,6 +49,7 @@ section{
     margin-bottom: .5rem;
     position: relative;
     transition: 0.5s max-height;
+    z-index: -1;
 
     img{
       display: block;
