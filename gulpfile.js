@@ -5,6 +5,7 @@ var cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 var minify = require('gulp-minify');
 var imagemin = require('gulp-imagemin');
+var responsive = require('gulp-responsive');
 
 gulp.task('serve', ['sass'], function() {
 
@@ -48,10 +49,48 @@ gulp.task('compile-js', function() {
     .pipe(gulp.dest("dist/js"))
 });
 
-gulp.task('compile-images', function() {
+gulp.task('compile-images', ['resize-images'], function() {
   return gulp.src("dev/images/*")
     .pipe(imagemin())
     .pipe(gulp.dest("dist/images"))
 });
 
-gulp.task('compile', ['compile-html', 'compile-css', 'compile-js', 'compile-images']);
+gulp.task('resize-images', function() {
+  return gulp.src("dev/images/*.{png,jpg}")
+  .pipe(responsive({
+    '*.jpg': [{
+      width: 400,
+      rename: { suffix: '-400px' },
+    }, {
+      width: 800,
+      rename: { suffix: '-800px' },
+    }, {
+      // Compress, strip metadata, and rename original image
+      rename: { suffix: '-original' },
+    }],
+    '*m.png': [{
+      width: 400,
+      rename: { suffix: '-400px' },
+    }, {
+      width: 800,
+      rename: { suffix: '-800px' },
+    }, {
+      // Compress, strip metadata, and rename original image
+      rename: { suffix: '-original' },
+    }],
+    '*d.png': [{
+      width: 500,
+      rename: { suffix: '-500px' },
+    }, {
+      width: 1000,
+      rename: { suffix: '-1000px' },
+    }, {
+      // Compress, strip metadata, and rename original image
+      rename: { suffix: '-original' },
+    }],
+  }))
+  .pipe(imagemin())
+  .pipe(gulp.dest("dist/images"))
+})
+
+gulp.task('compile', ['compile-html', 'compile-css', 'compile-js', 'resize-images', 'compile-images']);
