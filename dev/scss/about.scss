@@ -40,25 +40,6 @@ body{
   .leftnav{
     background-color: #7f93e6;
   }
-  section{ 
-    h1{
-      font-size: 3.25rem;
-    }
-    p{
-      font-size: 2.5rem;
-    }
-  }
-}
-
-@media only screen and (orientation: portrait) and (max-width: 800px) {
-  section{ 
-    h1{
-      font-size: 2.5rem;
-    }
-    p{
-      font-size: 1.75rem;
-    }
-  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 500px) {
@@ -66,14 +47,6 @@ body{
     width: 40vw;
     height: 40vw;
     margin-bottom: 3.5vw;
-  }
-  section{ 
-    h1{
-      font-size: 1.625rem;
-    }
-    p{
-      font-size: 1.25rem;
-    }
   }
 }
 
@@ -83,14 +56,6 @@ body{
     height: 45vw;
     margin-bottom: 5vw;
   }
-  section{ 
-    h1{
-      font-size: 1.5rem;
-    }
-    p{
-      font-size: 1.125rem;
-    }
-  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 350px) {
@@ -98,13 +63,5 @@ body{
     width: 50vw;
     height: 50vw;
     margin-bottom: 5.5vw;
-  }
-  section{ 
-    h1{
-      font-size: 1.25rem;
-    }
-    p{
-      font-size: 1rem;
-    }
   }
 }

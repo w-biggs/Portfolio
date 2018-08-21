@@ -149,12 +149,49 @@ body{
 
 @media only screen and (orientation: portrait) and (max-width: 500px) {
   #halves-container{
+    flex-direction: column;
     #sectionheader{
       font-size: 1.5rem;
     }
-    section ul li{
-      font-size: 1rem;
-      margin: .5em 0;
+    section{
+      width: 100%;
+      margin-bottom: 1em;
+      text-align: center;
+
+      h1{
+        font-size: 2.25rem;
+      }
+
+      ul li{
+        font-size: 1.5rem;
+        margin: .5em 0;
+      }
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 400px) {
+  #halves-container{
+    header.full{
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+    }
+    #sectionheader{
+      font-size: 1.375rem;
+    }
+    section{
+      width: 100%;
+      margin-bottom: 1em;
+      text-align: center;
+
+      h1{
+        font-size: 2rem;
+      }
+
+      ul li{
+        font-size: 1.25rem;
+        margin: .5em 0;
+      }
     }
   }
 }
