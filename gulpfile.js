@@ -51,7 +51,10 @@ gulp.task('compile-js', function() {
 });
 
 gulp.task('compile-images', ['resize-images'], function() {
-  return gulp.src("dev/images/*")
+  return gulp.src([
+    "dev/images/*",
+    "!dev/images/to-size/*"
+  ])
     .pipe(imagemin())
     .pipe(gulp.dest("dist/images"))
 });
