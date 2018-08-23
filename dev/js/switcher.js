@@ -16,6 +16,11 @@ $(document).ready(function(){
   setParentMaxHeight();
 });
 
+$(window).on('load', function(){
+  setImageMarginTop();
+  setParentMaxHeight();
+});
+
 $(window).on('resize', function(){
   setImageMarginTop();
   setParentMaxHeight();
