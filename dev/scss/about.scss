@@ -8,7 +8,7 @@ body{
   height: 19vw;
   border-radius: 100%;
   border: 3px solid #ced8ff;
-  background-image: url('../images/italy.jpg');
+  background-image: url('../images/italy-400px.jpg');
   background-size: contain;
   display: inline-block;
   margin-bottom: 1.66666667vw;
@@ -63,5 +63,39 @@ body{
     width: 50vw;
     height: 50vw;
     margin-bottom: 5.5vw;
+  }
+}
+
+/* profile image size queries */
+
+@media only screen and (min-width: 2100px),
+(min-width: 1680px) and (-webkit-min-device-pixel-ratio: 1.25),
+(min-width: 1680px) and (min-resolution: 120dpi),
+(min-width: 1400px) and (-webkit-min-device-pixel-ratio: 1.5),
+(min-width: 1400px) and (min-resolution: 144dpi),
+(min-width: 1050px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 1050px) and (min-resolution: 192dpi),
+(min-width: 840px) and (-webkit-min-device-pixel-ratio: 2.5),
+(min-width: 840px) and (min-resolution: 240dpi),
+(min-width: 700px) and (-webkit-min-device-pixel-ratio: 3),
+(min-width: 700px) and (min-resolution: 288dpi) {
+  #profile{
+    background-image: url('../images/italy-800px.jpg');
+  }
+}
+
+@media only screen and (min-width: 4200px),
+(min-width: 3360px) and (-webkit-min-device-pixel-ratio: 1.25),
+(min-width: 3360px) and (min-resolution: 120dpi),
+(min-width: 2800px) and (-webkit-min-device-pixel-ratio: 1.5),
+(min-width: 2800px) and (min-resolution: 144dpi),
+(min-width: 2100px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 2100px) and (min-resolution: 192dpi),
+(min-width: 1680px) and (-webkit-min-device-pixel-ratio: 2.5),
+(min-width: 1680px) and (min-resolution: 240dpi),
+(min-width: 1400px) and (-webkit-min-device-pixel-ratio: 3),
+(min-width: 1400px) and (min-resolution: 288dpi) {
+  #profile{
+    background-image: url('../images/italy-original.jpg');
   }
 }
