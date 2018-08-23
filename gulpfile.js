@@ -32,7 +32,7 @@ gulp.task('compile-css', function() {
   return gulp.src("dev/scss/*.scss")
     .pipe(sass())
     .pipe(autoprefixer({
-      browsers: ['defaults, iOS 10.2'],
+      browsers: ['defaults', 'iOS 10.2'],
       cascade: false
     }))
     .pipe(cleanCSS({compatibility: 'ie9'}))
