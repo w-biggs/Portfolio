@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minify = require('gulp-minify');
 var imagemin = require('gulp-imagemin');
 var responsive = require('gulp-responsive');
+var pngquant = require('imagemin-pngquant');
 
 gulp.task('serve', ['sass'], function() {
 
@@ -56,7 +57,7 @@ gulp.task('compile-images', ['resize-images'], function() {
 });
 
 gulp.task('resize-images', function() {
-  return gulp.src("dev/images/*.{png,jpg}")
+  return gulp.src("dev/images/to-size/*.{png,jpg}")
   .pipe(responsive({
     '*.jpg': [{
       width: 400,
@@ -89,8 +90,12 @@ gulp.task('resize-images', function() {
       rename: { suffix: '-original' },
     }],
   }))
-  .pipe(imagemin())
-  .pipe(gulp.dest("dist/images"))
+  .pipe(imagemin([
+    pngquant(),
+  ], {
+    verbose: true
+  }))
+  .pipe(gulp.dest("dev/images"))
 })
 
 gulp.task('compile', ['compile-html', 'compile-css', 'compile-js', 'resize-images', 'compile-images']);
