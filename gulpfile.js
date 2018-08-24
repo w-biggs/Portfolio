@@ -32,7 +32,8 @@ gulp.task('compile-html', function() {
     .pipe(panini({
       root: 'dev/pages/',
       layouts: 'dev/layouts/',
-      partials: 'dev/partials/'
+      partials: 'dev/partials/',
+      data: 'dev/data/'
     }))
     .pipe(gulp.dest("dist"))
 });

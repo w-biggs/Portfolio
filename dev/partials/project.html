@@ -1,0 +1,30 @@
+{{#each projects}}
+<section aria-label="projectname">
+  <div class="project-images landscape" aria-hidden="true">
+    <div class="project-image-container">
+      <img class="desktop current-image box-shadowed" alt="The desktop version of {{this.shortdesc}}" src="../images/{{this.urlname}}d-500px.png"
+        srcset="../images/{{this.urlname}}d-500px.png 500w,
+                ../images/{{this.urlname}}d-1000px.png 1000w,
+                ../images/{{this.urlname}}d-original.png 1918w"
+        sizes="(min-width: 1501px) 45vw,
+                (orientation: portrait) 81vw,
+                54vw" >
+      <img class="mobile box-shadowed" alt="The mobile version of {{this.shortdesc}}" src="../images/{{this.urlname}}m-400px.png"
+        srcset="../images/{{this.urlname}}m-400px.png 400w,
+                ../images/{{this.urlname}}m-800px.png 800w,
+                ../images/{{this.urlname}}m-original.png 1442w"
+        sizes="(min-width: 1501px) 45vw,
+                (orientation: portrait) 81vw,
+                54vw" >
+      
+    </div>
+    <div class="devices" role="group">
+      <span class="device current-device desktop-icon"><i class="fas fa-desktop"></i></span>
+      <span class="device mobile-icon"><i class="fas fa-mobile-alt"></i></span>
+    </div>
+  </div>
+  <h1 class="sans projectname">{{this.fullname}}</h1>
+  <p>{{this.description}}</p>
+  <a class="visitlink" aria-label="visit {{this.shortdesc}}" href="{{this.url}}">visit</a>
+</section>
+{{/each}}
