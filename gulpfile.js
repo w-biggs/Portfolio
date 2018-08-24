@@ -95,9 +95,14 @@ gulp.task('compile-images', gulp.series('resize-images', function() {
     .pipe(gulp.dest("dist/images"))
 }));
 
-gulp.task('compile', gulp.parallel('compile-html', 'compile-css', 'compile-js', 'resize-images', 'compile-images'));
+gulp.task('copy-misc', function(){
+  return gulp.src('./dev/favicon.ico')
+    .pipe(gulp.dest('./dist/'));
+})
 
-gulp.task('compile-noimg', gulp.parallel('compile-html', 'compile-css', 'compile-js'));
+gulp.task('compile-noimg', gulp.parallel('compile-html', 'compile-css', 'compile-js', 'copy-misc'));
+
+gulp.task('compile', gulp.parallel('compile-noimg', 'resize-images', 'compile-images'));
 
 gulp.task('serve', gulp.series('compile-noimg', function() {
 
