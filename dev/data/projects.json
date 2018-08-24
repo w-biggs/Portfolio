@@ -6,6 +6,13 @@
     "description": "Stone Row Pub &amp; Eatery is a restaurant in Jim Thorpe, PA. The owners needed a modern, easy to use website that got across the type of restaurant they are - one that's comfortable, homey, and casual, but still classy. In addition, they needed the site to be simple to update and take minimal upkeep. To fit these needs, the site is built on WordPress for easy updating, and has a modern yet comfortable look that fits the essence of what their restaurant is.",
     "url": "http://www.stoneroweatery.com/wp/"
   },
+  "ampshop": {
+    "fullname": "The Amp Shop",
+    "shortdesc": "the Amp Shop website",
+    "urlname": "ampshop",
+    "description": "The Amp Shop is a guitar and amplifier repair shop run by Ron Meersand. He needed a website that showed basic information about his business and was as easy to update as possible. He also wanted to build a brand identity, including a custom logo. I designed a logo for him, then built his website on Wordpress so he could easily update the images and content on the site.",
+    "url": "http://amprepairshop.com/"
+  },
   "weiner": {
     "fullname": "Richard Weiner, Sculptor",
     "shortdesc": "Richard Weiner's website",
