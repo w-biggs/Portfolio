@@ -91,7 +91,7 @@ gulp.task('compile-images', gulp.series('resize-images', function() {
     "dev/images/*",
     "!dev/images/to-size/*"
   ])
-    .pipe(imagemin())
+    .pipe(imagemin([imagemin.jpegtran({progressive: true}),{verbose: true}]))
     .pipe(gulp.dest("dist/images"))
 }));
 
