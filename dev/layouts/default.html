@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}} | Wilson Biggs Web Design &amp; Development</title>
+  <link rel="stylesheet" href="{{root}}/css/common.css">
+  <link rel="stylesheet" href="{{root}}/css/{{page}}.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/switcher.js"></script>
+</head>
+<body>
+  <div id="skyline"></div>
+  <nav class="leftnav">
+    <ul role="menubar" class="sans">
+      <li><a role="menuitem" title="go back to the homepage" href="/"><img id="small-logo" alt="Wilson Biggs logo" src="../images/logo-solid{{#ifpage 'contact'}}-white{{/ifpage}}.svg"></a></li>
+      <li><a role="menuitem" {{#ifpage 'about'~}} class="active" {{/ifpage~}} href="{{root}}/about.html">about</a></li>
+      <li><a role="menuitem" {{#ifpage 'projects'~}} class="active" {{/ifpage~}} href="{{root}}/projects.html">projects</a></li>
+      <li><a role="menuitem" {{#ifpage 'contact'~}} class="active" {{/ifpage~}} href="{{root}}/contact.html">contact</a></li>
+    </ul>
+  </nav>
+  {{> body}}
+</body>
+</html>
