@@ -13,6 +13,7 @@ var debug = require('gulp-debug');
 gulp.task('sass', function() {
   return gulp.src("./dev/scss/*.scss")
       .pipe(sass()).on('error', sass.logError)
+      .pipe(gulp.dest("./dist/css"))
       .pipe(browserSync.stream());
 });
 
