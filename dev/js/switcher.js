@@ -14,6 +14,11 @@ $(document).ready(function(){
   });
   setImageMarginTop();
   setParentMaxHeight();
+
+  $("img.current-image").on('load', function(){
+    setImageMarginTop();
+    setParentMaxHeight();
+  });
 });
 
 $(window).on('load', function(){
