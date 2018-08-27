@@ -46,6 +46,7 @@ main{
   overflow: hidden;
   max-width: 70%;
   margin: 0 auto;
+  z-index: 1;
 }
 
 header{
@@ -119,9 +120,9 @@ section{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  z-index: -2;
   background-image: url('../images/skyline.svg');
   opacity: 0.25;
+  z-index: -1;
 }
 
 /* responsive! */
