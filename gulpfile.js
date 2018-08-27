@@ -8,6 +8,7 @@ var imagemin = require('gulp-imagemin');
 var responsive = require('gulp-responsive');
 var pngquant = require('imagemin-pngquant');
 var panini = require('panini');
+var debug = require('gulp-debug');
 
 gulp.task('sass', function() {
   return gulp.src("dev/scss/*.scss")
